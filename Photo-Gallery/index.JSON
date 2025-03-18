@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Task 1 - HTML Basics",
+        "file": "tasks/task123.html"
+    },
+    {
+        "title": "Basic HTML styling",
+        "file": "tasks/task1.html"
+    },
+    {
+        "title":"CSS HOVER",
+        "file":"tasks/assignment-1.html"
+    },
+    {
+        "title":"Welcome to JS",
+        "file":"tasks/assignment3.html"
+    },
+    {
+        "title":"Calculator with JS",
+        "file":"tasks/assignment6.html"
+    },
+    {
+        "title":"Git hub integration",
+        "file":"tasks/assignment7.html"
+    },
+    {
+        "title":"Concole Output",
+        "file":"tasks/assignment8.html"
+    },
+    {
+        "title":"String operations",
+        "file":"tasks/assignment9.html"
+    },
+    {
+        "title":"Conditions",
+        "file":"tasks/assignment10.html"
+    },
+    {
+        "title":"Call stack with Array",
+        "file":"tasks/assignment11.html"
+    },
+    {
+        "title":"Star with loops",
+        "file":"tasks/assignment12.html"
+    },
+    {
+        "title":"Class Work",
+        "file":"tasks/assignment13.html"
+    },
+    {
+        "title":"Class Work-2",
+        "file":"tasks/assignment14.html"
+    },
+    {
+        "title":"Class Works-objects",
+        "file":"tasks/assignment15.html"
+    },
+    {
+        "title":"Class Work-functions",
+        "file":"tasks/assignment16.html"
+    },
+    {
+        "title":"Class Work-Boot strap",
+        "file":"tasks/assignment17.html"
+    },
+    {
+        "title":"Class Work-Boot strap-1",
+        "file":"tasks/assignment17-1.html"
+    },
+    {
+        "title":"Class Work-Boot strap-2",
+        "file":"tasks/assignment17-2.html"
+    },
+    {
+        "title":"Class work JSON",
+        "file":"tasks/assignment18.html"
+    }
+    
+]
