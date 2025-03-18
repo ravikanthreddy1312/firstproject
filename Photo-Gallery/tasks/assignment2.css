@@ -1,0 +1,79 @@
+.google-logo {
+display: flex;
+font-size: 50px;
+}
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.letter1{
+color: lightseagreen;
+height: 80px;
+width: 80px;
+display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.letter2{
+color: red;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter3{
+color: yellow;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter4{
+color: lightseagreen;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter5{
+color: lightgreen;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter6{
+color: orange;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter7{
+color: brown;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter8{
+color: blue;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.letter9{
+color: aqua;
+height: 80px;
+width: 80px;
+display: inline-block;
+}
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box:hover{
+cursor: pointer;
+scale:1.4;
+transition: all 0.5s;
+background-color: gray;
+}

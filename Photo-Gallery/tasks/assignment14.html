@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Star Pattern</title>
+    <script>
+        function generatePattern() { 
+            const colors = ["red", "blue", "green", "yellow"];
+            let box = 0;
+
+
+            
+            let text = "";
+            let n = document.getElementById('input').value;
+            let i = 1;
+        
+            do {
+                let j = 0;
+                
+                do {
+                    text += "* ";
+                    j++;
+                } while (j < i); 
+
+                text += "</span><br>";  
+                i++;
+            } while (i <= n); 
+
+            
+            document.getElementById("demo_div").innerHTML = text;
+            let randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById('demo_div').style.color = randomColor;
+        }
+        
+        window.onload = function() {
+            document.getElementById('input').addEventListener('input', generatePattern);
+        };
+    </script>
+</head>
+<body>
+    <label for="input">Enter number of rows:</label>
+    <input type="number" id="input" min="1">
+    <div id="demo_div"></div>
+</body>
+</html>

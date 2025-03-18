@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<script>
+    function score(){
+        let score = parsefloat(document.getElementById("input").value);
+        let grade = "";
+        if (score > 80 && score < 100){
+            grade = "A";
+        }
+        else if (score > 60 && score < 80) {
+            grade = "B";
+        }
+        else {
+            grade = "F";
+        }
+        document.getElementById("output").value = grade;
+    }
+
+
+</script>
+<body>
+    <input type="text" placeholder="Enter the score" id = "input" onkeyup="score();">
+    <p>Your Result is:</p><input type ="output" id = "output">
+</body>
+</html>
