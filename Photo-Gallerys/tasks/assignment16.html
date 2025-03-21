@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Generator</title>
+</head>
+<body style="display: block;">
+
+  <input type="number" id="maxValue" placeholder="Enter maximum value">
+  <input type="number" id="minValue" placeholder="Enter minimum value">
+  <button onclick="generateRandomNumber(displayRandomNumber)">Generate Random Number</button>
+  
+  <p id="output" style="padding: 10px; font-size: 20px; font-weight: bold;"></p> 
+
+  <script>
+ 
+    function generateRandomNumber(callback) {
+      const minValue = parseInt(document.getElementById("minValue").value);
+      const maxValue = parseInt(document.getElementById("maxValue").value);
+
+
+      
+      const randomValue = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
+      const backgroundColor = generateRandomColor();
+
+      
+      callback(randomValue, backgroundColor);
+    }
+
+ 
+    function displayRandomNumber(randomValue, color) {
+      const outputElement = document.getElementById("output");
+      outputElement.innerText = "Random Number: " + randomValue;
+      outputElement.style.backgroundColor = color;
+    }
+
+    
+    function generateRandomColor() {
+      return "#" + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+ 
+    function hidePage() {
+      document.body.style.display = "none"; 
+    }
+
+   
+    function showPage() {
+      document.body.style.display = "block"; 
+    }
+
+    
+    document.body.style.display = "block";
+
+    
+    setInterval(() => generateRandomNumber(displayRandomNumber), 3000);
+
+    
+    setTimeout(hidePage, 5000);
+
+  
+    setTimeout(showPage, 10000);
+  </script>
+
+</body>
+</html>
