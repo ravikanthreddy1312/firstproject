@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum</title>
+    <script>
+        function calculate() {
+            let a = parseInt(document.getElementById("input_a").value);
+            let b = parseInt(document.getElementById("input_b").value);
+
+            let sum = 0;
+            let colors = ["red", "blue", "green", "yellow", "orange", "purple"]; 
+            let colorIndex = 0;
+            let outputText = ""; 
+
+            if (a <= b) {
+                do {
+                    sum += a;
+                    outputText += `<span style="color:${colors[colorIndex]}">${a}</span> `;
+                    a++;
+                    colorIndex = (colorIndex + 1) % colors.length; 
+                } while (a <= b);
+            } else {
+                do {
+                    sum += a;
+                    outputText += `<span style="color:${colors[colorIndex]}">${a}</span> `;
+                    a--;
+                    colorIndex = (colorIndex + 1) % colors.length;
+                } while (a >= b);
+            }
+
+            document.getElementById("output_span").innerHTML = `Sum: ${sum}`;
+            document.getElementById("output_numbers").innerHTML = `Numbers: ${outputText}`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculate Sum</h1>
+    <label for="input_a">Start Number:</label>
+    <input type="number" id="input_a" required placeholder="Enter start number">
+
+    <label for="input_b">End Number:</label>
+    <input type="number" id="input_b" required placeholder="Enter end number">
+
+    <button onclick="calculate()">Calculate</button>
+    
+    <p><span id="output_span">Sum: 0</span></p>
+    <p id="output_numbers"></p> 
+</body>
+</html>

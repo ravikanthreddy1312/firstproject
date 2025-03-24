@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function reverseText() {
+        var text = document.getElementById('first').value;
+        var reversedText = text.toUpperCase();
+        document.getElementById('Result').value = reversedText;
+    }
+</script>
+<body>
+    <input type="text" id="first" placeholder="Enter the Text" onkeyup = "reverseText();" >
+    <input   id="Result" placeholder="Output will be display Here" disabled />
+    
+</body>
+</html>

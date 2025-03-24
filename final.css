@@ -1,0 +1,14 @@
+#name{
+background-color: blue;
+}
+body{
+background-color: dimgrey;
+text-align: center;
+font-size: 30px;
+}
+div{
+color: aliceblue;
+align-content: center;
+padding: 50px;
+text-align: center;
+}

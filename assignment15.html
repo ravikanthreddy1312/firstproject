@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+   
+    let aum = [
+      "S RAVIKANTH REDDY", 
+      "30",                
+      "7400 EAST DR",      
+      "MONTGOMERY",        
+      "AL",                
+      "36117",             
+      "703-555-1234",     
+      "ravik@example.com"  
+    ];
+
+    
+    aum.description = function () {
+      return `Name: ${this[0]}, Age: ${this[1]}, Address: ${this[2]}, City: ${this[3]}, State: ${this[4]}, Zip: ${this[5]}, Phone: ${this[6]}, Email: ${this[7]}`;
+    };
+
+  
+    function show_my_info() {
+      document.getElementById('demo_div').innerHTML = aum.description();
+    }
+
+    // Function to update the array values using prompt dialogs.
+    function update_my_info() {
+        aum[0] = document.getElementById("input_name").value || aum.name;
+      aum[1] = document.getElementById("input_age").value || aum.age;
+      aum[2] = document.getElementById("input_address").value || aum.address;
+      aum[3] = document.getElementById("input_city").value || aum.city;
+      aum[4] = document.getElementById("input_state").value || aum.state;
+      aum[5] = document.getElementById("input_zip").value || aum.zip;
+      aum[6] = document.getElementById("input_phone").value || aum.phone;
+      aum[7] = document.getElementById("input_email").value || aum.email;
+    }
+  </script>
+</head>
+<body>
+  <h1>My Information</h1>
+  <button onclick="show_my_info()">Show My Info</button>
+  <div id="demo_div"></div>
+  
+  <h2>Update Info</h2>
+  <!-- These input fields are present but not used in the update_my_info() function -->
+  <input type="text" id="input_name" placeholder="Enter new name">
+  <input type="text" id="input_age" placeholder="Enter new age">
+  <input type="text" id="input_address" placeholder="Enter new address">
+  <input type="text" id="input_city" placeholder="Enter new city">
+  <input type="text" id="input_state" placeholder="Enter new state">
+  <input type="text" id="input_zip" placeholder="Enter new zip">
+  <input type="text" id="input_phone" placeholder="Enter new phone">
+  <input type="text" id="input_email" placeholder="Enter new email">
+  <br>
+  <button onclick="update_my_info();">Update Info</button>
+</body>
+</html>
