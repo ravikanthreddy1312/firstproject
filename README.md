@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="index.css">
     <script>
         
-body {
+    body {
     font-family: Arial, sans-serif;
     display: flex;
     margin: 0;
     height: 100vh;
-}
-
-.container {
+    }
+    
+    .container {
     display: flex;
     width: 100%;
-}
-
-.sidebar {
+    }
+    
+    .sidebar {
     width: 25%;
     background: #333;
     color: white;
@@ -28,20 +28,20 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-}
-
-.sidebar h2 {
+    }
+    
+    .sidebar h2 {
     text-align: center;
-}
-
-ul {
+    }
+    
+    ul {
     list-style: none;
     padding: 0;
     margin: 0;
     flex-grow: 1;
-}
-
-.task-item {
+    }
+    
+    .task-item {
     padding: 10px;
     cursor: pointer;
     word-wrap: break-word;
@@ -50,23 +50,23 @@ ul {
     text-overflow: ellipsis;
     overflow: hidden;
     width: 100%;
-}
-
-.task-item:hover {
+    }
+    
+    .task-item:hover {
     background: #555;
-}
-
-.content {
+    }
+    
+    .content {
     width: 75%;
     padding: 20px;
-}
-
-iframe {
+    }
+    
+    iframe {
     width: 100%;
     height: 100%;
     border: none;
-}
-
+    }
+    
     </script>
 </head>
 <body>
