@@ -1,0 +1,13 @@
+#second {
+background-color: dimgray;
+padding: 50px;
+text-align: center;
+border-radius: 30px;
+}
+#first {
+background-color: lightskyblue;
+}
+button {
+margin-left: 350px;
+border-radius: 10px;
+}

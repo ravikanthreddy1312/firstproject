@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Basic HTML Styling",
+        "file": "task1.html"
+    },
+    {
+        "title": "CSS Hover",
+        "file": "assignment-1.html"
+    },
+    {
+        "title": "Welcome to JS",
+        "file": "assignment3.html"
+    },
+    {
+        "title": "Calculator with JS",
+        "file": "assignment6.html"
+    },
+    {
+        "title": "GitHub Integration",
+        "file": "assignment7.html"
+    },
+    {
+        "title": "Console Output",
+        "file": "assignment8.html"
+    },
+    {
+        "title": "String Operations",
+        "file": "assignment9.html"
+    },
+    {
+        "title": "Conditions",
+        "file": "assignment10.html"
+    },
+    {
+        "title": "Call Stack with Arrays",
+        "file": "assignment11.html"
+    },
+    {
+        "title": "Star Pattern with Loops",
+        "file": "assignment12.html"
+    },
+    {
+        "title": "Class Work",
+        "file": "assignment13.html"
+    },
+    {
+        "title": "Class Work 2",
+        "file": "assignment14.html"
+    },
+    {
+        "title": "Class Work - Objects",
+        "file": "assignment15.html"
+    },
+    {
+        "title": "Class Work - Functions",
+        "file": "assignment16.html"
+    },
+    {
+        "title": "Class Work - Bootstrap",
+        "file": "assignment17.html"
+    },
+    {
+        "title": "Class Work - Bootstrap 1",
+        "file": "assignment17-1.html"
+    },
+    {
+        "title": "Class Work - Bootstrap 2",
+        "file": "assignment17-2.html"
+    },
+    {
+        "title": "Class Work - JSON",
+        "file": "task123.html"
+    }
+]

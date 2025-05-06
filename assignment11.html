@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<script>
+    let taskList = []; // Global task array
+
+    function addTask(task) {
+        if (task.trim() === "") {
+            alert("Task cannot be empty!");
+            return;
+        }
+        taskList.push(task);
+        document.getElementById("output").value = taskList.join(", ");
+        document.getElementById("taskInput").value = ""; // Clear input field
+    }
+
+    function removeTask(index) {
+        if (index >= 0 && index < taskList.length) {
+            taskList.splice(index, 1);
+        } else {
+            console.log("Invalid index");
+        }
+        document.getElementById("output").value = taskList.join(", ");
+    }
+</script>
+
+<body>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask(document.getElementById('taskInput').value)">Add Task</button>
+    <button onclick="removeTask(taskList.length - 1)">Remove Last Task</button>
+    <br>
+    <input type="text" id="output" readonly>
+</body>
+</html>

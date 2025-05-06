@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Billing Form</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 600px;
+        }
+        .btn-custom {
+            background-color: #ff5e62;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #e04a50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2 class="text-center mb-4">Customer Billing Form</h2>
+    <form id="billingForm">
+
+        <div class="form-group">
+            <label for="customerName">Full Name</label>
+            <input type="text" class="form-control" id="customerName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userHandle">Username</label>
+            <input type="text" class="form-control" id="userHandle" placeholder="Enter a username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="emailAddress">Email</label>
+            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+        </div>
+
+        <h4 class="mt-4">Billing Address</h4>
+        <div class="form-group">
+            <label for="givenName">First Name</label>
+            <input type="text" class="form-control" id="givenName" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="surname">Last Name</label>
+            <input type="text" class="form-control" id="surname" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="streetAddress">Address</label>
+            <input type="text" class="form-control" id="streetAddress" placeholder="Enter your address" required>
+        </div>
+        <div class="form-group">
+            <label for="nation">Country</label>
+            <input type="text" class="form-control" id="nation" placeholder="Enter your country" required>
+        </div>
+        <div class="form-group">
+            <label for="region">State/Province</label>
+            <input type="text" class="form-control" id="region" placeholder="Enter your state or province" required>
+        </div>
+        <div class="form-group">
+            <label for="postalCode">Zip/Postal Code</label>
+            <input type="text" class="form-control" id="postalCode" placeholder="Enter your zip/postal code" required>
+        </div>
+
+        <h4 class="mt-4">Payment Information</h4>
+        <div class="form-group">
+            <label for="cardHolder">Name on Card</label>
+            <input type="text" class="form-control" id="cardHolder" placeholder="Enter name on card" required>
+        </div>
+        <div class="form-group">
+            <label for="cardDigits">Card Number</label>
+            <input type="text" class="form-control" id="cardDigits" placeholder="Enter your card number" required>
+        </div>
+        <div class="form-group">
+            <label for="expiry">Expiration Date</label>
+            <input type="month" class="form-control" id="expiry" required>
+        </div>
+        <div class="form-group">
+            <label for="securityCode">CVV</label>
+            <input type="text" class="form-control" id="securityCode" placeholder="Enter your CVV" required>
+        </div>
+
+        <button type="submit" class="btn btn-custom btn-block">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('billingForm').addEventListener('submit', function(event) {
+        event.preventDefault();  
+
+        const customerName = document.getElementById('customerName').value;
+        const userHandle = document.getElementById('userHandle').value;
+        const emailAddress = document.getElementById('emailAddress').value;
+        const givenName = document.getElementById('givenName').value;
+        const surname = document.getElementById('surname').value;
+        const streetAddress = document.getElementById('streetAddress').value;
+        const nation = document.getElementById('nation').value;
+        const region = document.getElementById('region').value;
+        const postalCode = document.getElementById('postalCode').value;
+        const cardHolder = document.getElementById('cardHolder').value;
+        const cardDigits = document.getElementById('cardDigits').value;
+        const expiry = document.getElementById('expiry').value;
+        const securityCode = document.getElementById('securityCode').value;
+
+        console.log('Customer Name:', customerName);
+        console.log('Username:', userHandle);
+        console.log('Email:', emailAddress);
+        console.log('Billing Address:', `${givenName} ${surname}, ${streetAddress}, ${nation}, ${region}, ${postalCode}`);
+        console.log('Payment Info:', `Card Name: ${cardHolder}, Card Number: ${cardDigits}, Expiry: ${expiry}, CVV: ${securityCode}`);
+
+        alert('Billing form submitted successfully!');
+    });
+</script>
+
+</body>
+</html>
